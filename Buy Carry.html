@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- Html contains two parts - head(meta, css, js) and body(contents, js) -->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Customer Information</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="col-md-8 col-md-offset-2">
+			<div class="panel panel-default">
+				<div class="panel-heading">Please provide the following information.</div>
+				<div class="panel-body">
+					<!--<form action="patientAdmissionFormSubmit.php" method="POST">-->
+						<div class="row">
+                            <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="Name">Full name: </label>
+                                        <input type="text" name="Name" class="form-control" id="Name" required>
+                                    </div>
+    
+                                    <div class="form-group">
+                                        <label for="Phone no.">Phone No: </label>
+                                        <input type="text" name="Phone no." class="form-control" id="Phone no." required>
+                                    </div>
+    
+                                    <div class="form-group">
+                                        <label for="Email">Email: </label>
+                                        <input type="text" name="Email" class="form-control" id="Email" required>
+                                    </div>
+    
+                                    <div class="form-group">
+                                        <label for="Address">Present address:</label>
+                                        <textarea name="Address" id="Address" class="form-control" cols="30" rows="2"></textarea>
+                                    </div>
+    
+                                </div>
+
+							<div class="col-md-3">
+                                <div class="form-group">
+                                    <br>
+                                    <p><label for="Product ID">Product ID:  </label> 8</p>
+                                </div>
+
+								<div class="form-group">
+									<p><label for="Reward Points">Reward Point:  </label> 250</p>
+								</div>
+
+								<div class="form-group">
+                                    <label for="Review">Review:</label>
+                                    <textarea name="Review" id="Review" class="form-control" cols="30" rows="3"></textarea>
+                                </div>
+							</div>
+							
+							<div class="col-md-7">
+								<button type="submit" class="btn btn-info">Submit</button>
+							</div>
+						</div>
+					<!--</form>-->
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
